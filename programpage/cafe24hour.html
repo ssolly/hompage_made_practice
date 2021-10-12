@@ -15,12 +15,18 @@
 	nav ul li a{background-color:#C6AA91; font-family:fantasy; font-size:17pt; text-decoration:none; color:#7C502B;}
 	nav ul li a:hover{color:#E1893C; transition:all 0.25s;}
 	
-	.content{margin-top:210px;display:flex; position:fixed;}
-	.programs{ background-color:#EEDED0; width:250px;}
-	.programs ul { background-color:#EEDED0; border-right:1px dashed #7C502B;}
-	.programs ul li{color:#7C502B; background-color:#EEDED0; padding:20px 0;}
+	.content1{margin-top:210px; background-color:#EEDED0; width:16.8%;float:left; position:fixed;}
+	.programs{ background-color:#EEDED0;}
+	.programs ul {background-color:#EEDED0;}
+	.programs ul li{ color:#7C502B; background-color:#EEDED0; padding:20px 0;}
 	.programs ul li a{color:#7C502B; background-color:#EEDED0; font-size:14pt; font-family:fantasy; text-decoration:none;}
 	.programs ul li a:hover {color:#DC9C64; transition:all 0s;}
+	
+	
+	.content2{ margin-top:210px; float:right; width:74.9%; background-color:#EEDED0; border-left:1px dashed #7C502B;}
+	.content2 table{margin-left:30px;background-color:#EEDED0;}
+	.content2 table td{padding:10px 15px; color:#64462D; font-family:fantasy; font-size:18pt; text-align:center; background-color:#EEDED0;}
+
 	
 </style>
 </head>
@@ -39,7 +45,7 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="content">
+		<div class="content1">
 			<div class="programs">
 				<ul>
 					<li><a href="../programpage/cafe24hour.html">24 HOUR CAFE</a></li>
@@ -47,6 +53,19 @@
 					<li><a href="#">RESERVATION(library)</a></li>
 				</ul>
 			</div>
+		</div>
+		<div class="content2">
+			<table class="detail">
+				<tr>
+					<td><img src="../img/cafe_order.png" width="500px" height="450px"></td> <td>기본 화면 세팅</td>	
+				</tr>
+				<tr>
+					<td><img src="../img/cafe_detail_1.png" width="500px"></td> <td rowspan="2">디테일 화면</td>	 
+				</tr>
+				<tr>
+					<td><img src="../img/cafe_detail_1.png" width="500px"></td>
+				</tr>
+			</table>
 		</div>
 </div>
 </body>
