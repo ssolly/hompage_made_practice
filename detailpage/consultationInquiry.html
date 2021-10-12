@@ -2,9 +2,85 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ConsultationInquriy</title>
+<title>ConsultingInquiry</title>
+<style type="text/css">
+	*{margin:0;background-color:#E1D4C9;}
+	#wrap{width:1024px; margin:auto;  }
+	.header{width:1024px; position:fixed; top:0px; background-color:#D7BBA3;
+			/*background-image:url("../img/"); */; z-index:111;}
+	.header>a {background-color:#D7BBA3;}
+	.header img {margin-left:250px;justify-content: center; padding:14px; background-color:#D7BBA3;}
+	nav ul{background-color:#C6AA91;list-style:none; display:flex;justify-content:space-around;}
+	nav ul li{background-color:#C6AA91;margin:0 3px; padding:10px;}
+	nav ul li a{background-color:#C6AA91; font-family:fantasy; font-size:17pt; text-decoration:none; color:#7C502B;}
+	nav ul li a:hover{color:#E1893C; transition:all 0.25s;}
+	
+	.content{margin-top:250px; background-color:#EEDED0;}
+	.content table{background-color:#EEDED0; margin-left:115px;}
+	.content table td{background-color:#EEDED0;}
+	.content table td label b{background-color:#EEDED0;}
+	form{margin:auto; width:80%; background-color:#EEDED0; padding:30px 20px;}
+	form label{text-align:center; color:#7A5432; font-size:13pt; font-family:fantasy; width:120px; display:inline-block; padding:10px 0; vertical-align:top; background-color:#EEDED0;}
+	form input{border-radius:5px; height:20px; width:90%; border:1px solid #9E6D43; background-color:#F5EAE0; }
+	form select{border-radius:5px; height:30px; width:90%; border:1px solid #9E6D43; background-color:#F5EAE0; }
+	form textarea{border-radius:5px; width:90%; height:170px; border:1px solid #9E6D43; background-color:#F5EAE0;}
+	.button{margin-left:300px; background-color:#EEDED0;}
+	form button{margin-left:50px; margin-top:20px; padding:5px 15px; border-radius:5px; background-color:#B08763; color:#F5E6D9;}
+	form button:active{border-radius:2px; background-color:#A27D5C;}
+	
+</style>
 </head>
 <body>
-consultation inquiry page
+<div id="wrap">
+		<div class="header">
+			<a href="../mainpage/mainpage.html">
+			<img src="../img/group6.png">
+			</a>
+			<nav>
+				<ul>
+					<li><a href="../detailpage/aboutTeam.html">TEAM</a></li>
+					<li><a href="../detailpage/aboutProject.html">PROJECT</a></li>
+					<li><a href="../detailpage/aboutProgram.html">PROGRAM</a></li>
+					<li><a href="../detailpage/consultationInquiry.html">CONSULT</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="content">
+		<form action="">
+			<table>
+				<tr>
+					<td><label><b>이름</b></label></td>
+					<td><input type="text"></td>
+					<td><label><b>전화번호</b></label></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><label><b>이메일</b></label></td>
+					<td><input type="email"></td>
+					<td><label><b>상담 목적</b></label>
+					<td><select name="select">
+							<option value="v1"> 프로그램 의뢰 
+							<option value="v2"> 프로그램 구매
+							<option value="v3"> AS 문의
+							<option value="v4"> 기타 문의
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label><b>제목</b></label></td>
+					<td colspan="3"><input type="text"></td>
+				</tr>
+				<tr>
+					<td><label><b>내용</b></label>
+					<td colspan="3"><textarea></textarea></td>
+				</tr>
+			</table>
+				<div class="button">
+				<button type="reset">취소</button>
+				<button type="submit">전송</button>
+				</div>
+		</form>
+		</div>
+</div>
 </body>
 </html>
